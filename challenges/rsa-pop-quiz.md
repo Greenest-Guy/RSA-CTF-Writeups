@@ -32,7 +32,7 @@ $$p * q = n$$
 
 Given the prime number $p$ and the modulus $n$, the second prime number used to create the modulus can be calculated by rearranging $p * q = n$, so that:
 
-$$p = n / q$$
+$$q = n / p$$
 
 ---
 
