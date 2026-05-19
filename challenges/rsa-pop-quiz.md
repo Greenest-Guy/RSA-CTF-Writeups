@@ -125,7 +125,7 @@ $$m = c^d \mod n$$
 ## Flag
 Finally the flag can be calculated by translating the plaintext from Question 8 and decoding it into ascii (utf-8).
 
-```
+```python
 m = PLAINTEXT
 
 hex = f"{m:x}"
