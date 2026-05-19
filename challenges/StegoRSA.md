@@ -19,7 +19,7 @@ Can you recover it and decrypt the message? Download the flag and image.
 5. Use the private RSA key recovered to decrypt ```flag.enc```
 
 ## **Explanation**
-
+  The private key for ```flag.enc``` was carelessly stored as a hexadecimal comment in ```image.jpg```, allowing for the use of steganography to retrieve the key and decrypt the file.
 
 ## **Code / Commands / Images**
 ```bash
@@ -35,6 +35,6 @@ echo "HEX" | xxd -r -p > key.txt
 ```bash
 openssl pkeyutl -decrypt -inkey key.txt -in flag.enc
 ```
-> Decrypts flag.enc using the private RSA key in ```key.txt```
+> Decrypts ```flag.enc``` using the private RSA key in ```key.txt```
 
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
