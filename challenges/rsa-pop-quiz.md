@@ -99,6 +99,6 @@ Given the two prime numbers $p$ and $q$, and the public exponent $e$, the privat
 
 $$\phi (n) = (p - 1)(q - 1)$$
 
-$$d = e^(-1) \mod \phi (n) $$
+$$d = e^{-1} \mod \phi (n) $$
 
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
