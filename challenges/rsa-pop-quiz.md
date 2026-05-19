@@ -56,7 +56,33 @@ Given the public exponent $e$ and sufficiently large modulus $n$, the prime numb
 
 ### Answer
 Given the prime numbers $p$ and $q$ we can calculate [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function) $\phi (n)$ using the shortcut:
+
 $$\phi (n) = (p - 1)(q - 1)$$
 
+## Question 5
+### Given
+- m
+- e
+- n
+
+### Calculate
+- c
+
+### Answer
+Given the message $m$, public exponent $e$, and modulus $n$, we can encrypt $m$ by using the public key $(n, e)$:
+
+$$c = m^e \mod n$$
+
+## Question 6
+### Given
+- c
+- e
+- n
+
+### Calculate
+- m
+
+### Answer
+Given the ciphertext $c$, public exponent $e$, and modulus $n$, we have the public key $(n, e)$ used for encryption, but are missing the private exponent $d$, meaning the ciphertext $c$ can not be decrypted.
 
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
