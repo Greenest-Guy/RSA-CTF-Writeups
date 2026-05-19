@@ -46,4 +46,17 @@ $$p = n / q$$
 ### Answer
 Given the public exponent $e$ and sufficiently large modulus $n$, the prime numbers in which the modulus is comprised of cannot be reasonably calculated due to the [RSA Problem](https://en.wikipedia.org/wiki/RSA_problem).
 
+## Question 4
+### Given
+- p
+- q
+
+### Calculate
+- $\phi (n)$
+
+### Answer
+Given the prime numbers $p$ and $q$ we can calculate [Euler's Totient](https://en.wikipedia.org/wiki/Euler%27s_totient_function) $\phi (n)$ using the shortcut:
+$$\phi (n) = (p - 1)(q - 1)$$
+
+
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
