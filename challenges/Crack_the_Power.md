@@ -1,4 +1,5 @@
 ## 🔐 Crack the Power
+**Difficulty:** Medium
 **Files/Links Provided:** ```message.txt```
 
 **Description:**  
