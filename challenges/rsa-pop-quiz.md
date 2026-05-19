@@ -122,4 +122,17 @@ $$d = e^{-1} \mod \phi (n) $$
 
 $$m = c^d \mod n$$
 
+## Flag
+Finally the flag can be calculated by translating the plaintext from Question 8 and decoding it into ascii (utf-8).
+
+```
+m = PLAINTEXT
+
+hex = f"{m:x}"
+
+ascii = bytes.fromhex(hex).decode('utf-8')
+
+print(ascii)
+```
+
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
