@@ -85,4 +85,20 @@ $$c = m^e \mod n$$
 ### Answer
 Given the ciphertext $c$, public exponent $e$, and modulus $n$, we have the public key $(n, e)$ used for encryption, but are missing the private exponent $d$, meaning the ciphertext $c$ can not be decrypted.
 
+## Question 7
+### Given
+- p
+- q
+- e
+
+### Calculate
+- d
+
+### Answer
+Given the two prime numbers $p$ and $q$, and the public exponent $e$, the private exponent $d$ can be calculated by calculating Euler's Totient.
+
+$$\phi (n) = (p - 1)(q - 1)$$
+
+$$d = e^(-1) \mod \phi (n) $$
+
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
