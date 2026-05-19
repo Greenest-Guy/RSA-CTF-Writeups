@@ -101,4 +101,25 @@ $$\phi (n) = (p - 1)(q - 1)$$
 
 $$d = e^{-1} \mod \phi (n) $$
 
+## Question 8
+### Given
+- p
+- e
+- n
+- c
+
+### Calculate
+- m
+
+### Answer
+Given the prime $p$, the public exponent $e$, the modulus $n$ and the ciphertext $c$, we can decrypt the ciphertext by calculating the prime factor $q$, Euler's Totient, and the private exponent $d$.
+
+$$q = n / p$$
+
+$$\phi (n) = (p - 1)(q - 1)$$
+
+$$d = e^{-1} \mod \phi (n) $$
+
+$$m = c^d \mod n$$
+
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
