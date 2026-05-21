@@ -10,7 +10,7 @@ Class, take your seats! It's PRIME-time for a quiz...
 
 </div>
 
----
+
 
 ## Question 1
 
@@ -22,7 +22,7 @@ Given the prime numbers $p$ and $q$, the modulus $n$ can be calculated as follow
 
 $$p * q = n$$
 
----
+
 
 ## Question 2
 
@@ -34,7 +34,7 @@ Given the prime number $p$ and the modulus $n$, the second prime number used to 
 
 $$q = n / p$$
 
----
+
 
 ## Question 3
 
@@ -44,7 +44,7 @@ $$q = n / p$$
 
 Given the public exponent $e$ and sufficiently large modulus $n$, the prime numbers in which the modulus is comprised of cannot be reasonably calculated due to the [RSA Problem](https://en.wikipedia.org/wiki/RSA_problem).
 
----
+
 
 ## Question 4
 
@@ -56,7 +56,7 @@ Given the prime numbers $p$ and $q$ we can calculate [Euler's Totient](https://e
 
 $$\phi (n) = (p - 1)(q - 1)$$
 
----
+
 
 ## Question 5
 
@@ -68,7 +68,7 @@ Given the message $m$, public exponent $e$, and modulus $n$, we can encrypt $m$ 
 
 $$c = m^e \mod n$$
 
----
+
 
 ## Question 6
 
@@ -78,7 +78,7 @@ $$c = m^e \mod n$$
 
 Given the ciphertext $c$, public exponent $e$, and modulus $n$, we have the public key $(n, e)$ used for encryption, but are missing the private exponent $d$, meaning the ciphertext $c$ can not be decrypted.
 
----
+
 
 ## Question 7
 
@@ -92,7 +92,7 @@ $$\phi (n) = (p - 1)(q - 1)$$
 
 $$d = e^{-1} \mod \phi (n) $$
 
----
+
 
 ## Question 8
 
@@ -110,7 +110,7 @@ $$d = e^{-1} \mod \phi (n) $$
 
 $$m = c^d \mod n$$
 
----
+
 
 ## 🏁 Flag
 
@@ -123,7 +123,7 @@ ascii = bytes.fromhex(hex).decode('utf-8')
 print(ascii)
 ```
 
----
+
 
 <div align="center">
 
