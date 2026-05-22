@@ -6,13 +6,9 @@
 
 </div>
 
----
-
 ## 📖 About
 
 This repository contains detailed write-ups for various RSA focused cryptography challenges from the CyLab Security Academy.
-
----
 
 ## Challenges
 
