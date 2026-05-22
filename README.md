@@ -62,7 +62,7 @@ Since the private exponent $d$ is the modular inverse of the public exponent $e 
 
 $$e \cdot d \equiv 1 \pmod{\phi(n)}$$
 
-Following Euler's theorem:
+Following [Euler's theorem](https://en.wikipedia.org/wiki/Euler%27s_theorem):
 
 $$m^{\phi(n)} \equiv 1 \pmod{n}$$
 
