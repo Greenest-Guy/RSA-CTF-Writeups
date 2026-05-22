@@ -33,6 +33,9 @@ Finally, the ciphertext $c$ can be decrypted:
 $$m = c^d \mod (n)$$
 
 ## **Code / Commands / Images**
+
+[```Prime Factor Decomposition```](https://www.dcode.fr/prime-factors-decomposition)
+
 ```Python
 def decrypt(ciphertext, private_exponent, modulus) -> tuple:
     m = pow(ciphertext, private_exponent, modulus)
