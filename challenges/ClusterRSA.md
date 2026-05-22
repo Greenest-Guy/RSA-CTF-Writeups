@@ -9,11 +9,29 @@ A message has been encrypted using RSA, but this time something feels... more cr
 Download the message.
 ```
 
-## **Steps to Solve**  
-1. 
-
 ## **Explanation**
-  
+This challenge presents an RSA modulus built from more than 2 unique prime factors. The security of the RSA cryptosystem relies on the difficulty of integer factorization, specifically, the factorization of a modulus build off of 2 sufficiently large primes (generally 1024 bits each, creating a 2048-bit modulus).
+
+The vulnerability here is that the modulus is constructed from multiple smaller primes rather than two large ones. For a fixed-size modulus, using more primes means each individual prime is proportionally smaller. This matters because various prime decomposition algorithms time complexities are based upon the size of the factors not the size of the modulus, therefor smaller factors make factorization dramatically faster.
+
+Being aware of this vulnerability allows us to [decompose the prime factors](https://www.dcode.fr/prime-factors-decomposition) that the modulus was built upon, and reconstruct the private key.
+
+To calculate the private exponent using multiple prime numbers we must first calculate Euler's Totient with $k$ prime numbers:
+
+$$\phi(n) = \prod_{i=1}^{k} (p_i - 1)$$
+
+Where in this case with 4 primes:
+
+$$\phi (n) = (p_1 - 1)(p_2 - 1)(p_3 - 1)(p_4 - 1)$$
+
+Now having the public exponent $e$ and Euler's Totient we can calculate the private exponent $d$ as follows:
+
+$$d \equiv e^{-1} \pmod{\phi(n)}$$
+
+Finally, the ciphertext $c$ can be decrypted:
+
+$$m = c^d \mod (n)$$
+
 ## **Code / Commands / Images**
 ```Python
 def decrypt(ciphertext, private_exponent, modulus) -> tuple:
