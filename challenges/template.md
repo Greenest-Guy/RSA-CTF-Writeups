@@ -1,5 +1,9 @@
+<div align="center">
+
 # 🔐 
-**Difficulty:** 
+**Difficulty:**
+
+</div>
 
 **Files/Links Provided:** ``````
 
