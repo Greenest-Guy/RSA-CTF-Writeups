@@ -26,7 +26,7 @@ $$\phi (n) = (p_1 - 1)(p_2 - 1)(p_3 - 1)(p_4 - 1)$$
 
 Now having the public exponent $e$ and Euler's Totient we can calculate the private exponent $d$ as follows:
 
-$$d \equiv e^{-1} \pmod{\phi(n)}$$
+$$d = e^{-1} \mod \phi (n) $$
 
 Finally, the ciphertext $c$ can be decrypted:
 
