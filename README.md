@@ -9,3 +9,4 @@ Write-ups on various RSA CTF challenges from PicoCTF/CyLab Security Academy
 - [`ClusterRSA`](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md)
 ### Hard
 - [`rsa-pop-quiz`](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md)
+- [`miniRSA`](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md)
