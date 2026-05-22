@@ -22,6 +22,7 @@ This repository contains detailed write-ups for various RSA focused cryptography
 ### Hard
 - [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md)
 - [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md)
+- [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md)
 
 ## 🧮 RSA Mathematics Basics
 The security of the RSA cryptosystem lies in the difficulty of factoring a large modulus into its original prime factors. RSA keys are generated using large prime factors, and utilizing modular arithmetic to encrypt and decrypt messages.
