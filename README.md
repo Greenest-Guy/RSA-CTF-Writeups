@@ -14,6 +14,7 @@ This repository contains detailed write-ups for various RSA focused cryptography
 
 ### Easy
 - [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md)
+- [```EVEN RSA CAN BE BROKEN???```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/EVEN_RSA_CAN_BE_BROKEN%3F%3F%3F.md)
 
 ### Medium
 - [```Crack the Power```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Crack_the_Power.md)
