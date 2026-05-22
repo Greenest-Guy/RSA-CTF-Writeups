@@ -34,7 +34,7 @@ This challenge uses RSA encryption to encrypt a message where n is built off of 
 The ciphertext in RSA is calculated using the formula:
 
 $$
-c = m^e mod(n)
+c = m^e \mod (n)
 $$
 
 When $$m^e$$ is smaller than n modular reduction doesnt occur as $$m^e mod(n)$$ would just be $$m^e$$. Because of this, the ciphertext isnt actually encrypted, and can be decrypted by rearranging $$c = m^e$$ into $$m = \sqrt[e]{c}$$.
