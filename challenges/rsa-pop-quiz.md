@@ -14,7 +14,7 @@ Class, take your seats! It's PRIME-time for a quiz...
 
 Given the prime numbers $p$ and $q$, the modulus $n$ can be calculated as follows:
 
-$$p * q = n$$
+$$p \cdot q = n$$
 
 
 
