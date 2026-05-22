@@ -16,22 +16,13 @@ This repository contains detailed write-ups for various RSA focused cryptography
 
 ## Challenges
 
-### 🟢 Easy
+### Easy
+- [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md)
 
-| Challenge | Concept | Write-up |
-|---|---|---|
-| **StegoRSA** | Steganography & RSA | [Read](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md) |
+### Medium
+- [```Crack the Power```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Crack_the_Power.md)
+- [```ClusterRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md)
 
-### 🟡 Medium
-
-| Challenge | Concept | Write-up |
-|---|---|---|
-| **Crack the Power** | Low Public Exponent Attacks | [Read](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Crack_the_Power.md) |
-| **ClusterRSA** | Multi-Prime RSA | [Read](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md) |
-
-### 🔴 Hard
-
-| Challenge | Concept | Write-up |
-|---|---|---|
-| **rsa-pop-quiz** | RSA Calculations and Feasibility| [Read](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md) |
-| **miniRSA** | Low Public Exponent Attacks | [Read](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md) |
+### Hard
+- [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md)
+- [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md)
