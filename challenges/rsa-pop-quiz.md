@@ -1,11 +1,6 @@
-<div align="center">
-
 # 🔐 rsa-pop-quiz
 
 **Difficulty:** `Hard`
-
-
-</div>
 
 ```
 Class, take your seats! It's PRIME-time for a quiz...
@@ -29,7 +24,7 @@ $$p * q = n$$
 >
 > **Calculate:** `q`
 
-Given the prime number $p$ and the modulus $n$, the second prime number used to create the modulus can be calculated by rearranging $p * q = n$, so that:
+Given the prime number $p$ and the modulus $n$, the second prime number used to create the modulus can be calculated algebraically by rearranging $p * q = n$, so that:
 
 $$q = n / p$$
 
@@ -41,7 +36,7 @@ $$q = n / p$$
 >
 > **Calculate:** `p`, `q`
 
-Given the public exponent $e$ and sufficiently large modulus $n$, the prime numbers in which the modulus is comprised of cannot be reasonably calculated due to the [RSA Problem](https://en.wikipedia.org/wiki/RSA_problem).
+Given that the public exponent $e$ and  modulus $n$ are sufficiently large, the prime numbers in which the modulus is comprised of cannot be reasonably factored due to the [RSA Problem](https://en.wikipedia.org/wiki/RSA_problem).
 
 
 
@@ -85,9 +80,11 @@ Given the ciphertext $c$, public exponent $e$, and modulus $n$, we have the publ
 >
 > **Calculate:** `d`
 
-Given the two prime numbers $p$ and $q$, and the public exponent $e$, the private exponent $d$ can be calculated by calculating Euler's Totient.
+Given the two prime numbers $p$ and $q$, and the public exponent $e$, the private exponent $d$ can be calculated by first calculating Euler's Totient:
 
 $$\phi (n) = (p - 1)(q - 1)$$
+
+Then:
 
 $$d = e^{-1} \mod \phi (n) $$
 
@@ -99,13 +96,19 @@ $$d = e^{-1} \mod \phi (n) $$
 >
 > **Calculate:** `m`
 
-Given the prime $p$, the public exponent $e$, the modulus $n$ and the ciphertext $c$, we can decrypt the ciphertext by calculating the prime factor $q$, Euler's Totient, and the private exponent $d$.
+Given the prime number $p$, the public exponent $e$, the modulus $n$ and the ciphertext $c$, we can decrypt the ciphertext by first calculating the second prime factor $q$:
 
 $$q = n / p$$
 
+Calculating Euler's Totient:
+
 $$\phi (n) = (p - 1)(q - 1)$$
 
+Calculating the private exponent $d$:
+
 $$d = e^{-1} \mod \phi (n) $$
+
+And finally decrypting the message:
 
 $$m = c^d \mod n$$
 
@@ -113,7 +116,7 @@ $$m = c^d \mod n$$
 
 ## 🏁 Flag
 
-Finally the flag can be calculated by translating the plaintext from Question 8 and decoding it into ascii (utf-8).
+The flag for this challenge can be recovered by decoding the plaintext from Question 8 into hex, then decoding it into ascii (utf-8).
 
 ```python
 m = PLAINTEXT
@@ -122,10 +125,4 @@ ascii = bytes.fromhex(hex).decode('utf-8')
 print(ascii)
 ```
 
-
-
-<div align="center">
-
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
-
-</div>

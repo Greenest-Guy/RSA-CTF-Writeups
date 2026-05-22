@@ -12,7 +12,7 @@ Download the message.
 ## **Explanation**
 This challenge presents an RSA modulus built from more than 2 unique prime factors. The security of the RSA cryptosystem relies on the difficulty of [integer factorization](https://en.wikipedia.org/wiki/Integer_factorization), specifically, the factorization of a modulus build off of 2 sufficiently large primes (generally 1024 bits each, creating a 2048-bit modulus).
 
-The vulnerability here is that the modulus is constructed from multiple smaller primes rather than two large ones. For a fixed-size modulus, using more primes means each individual prime is proportionally smaller. This matters because various prime decomposition algorithms time complexities are based upon the size of the factors not the size of the modulus, therefor smaller factors make factorization dramatically faster.
+The vulnerability occurs due to the fact that the modulus is constructed from multiple smaller primes rather than two large ones. For a fixed-size modulus, using a greater number of primes correlates to each individual prime being proportionally smaller. This matters because various prime decomposition algorithms time complexities are based upon the size of the factors as opposed to the size of the modulus, therefore smaller factors make factorization dramatically faster.
 
 Being aware of this vulnerability allows us to [decompose the prime factors](https://www.dcode.fr/prime-factors-decomposition) that the modulus was built upon, and reconstruct the private key.
 

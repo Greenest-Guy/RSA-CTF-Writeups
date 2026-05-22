@@ -1,9 +1,6 @@
-<div align="center">
-
 # 🔐 b00tl3gRSA3
-**Difficulty:** Hard
 
-</div>
+**Difficulty:** Hard
 
 ## **Description**  
 
@@ -11,17 +8,34 @@
 Why use p and q when I can use more?
 ```
 
-## **Steps to Solve**  
-1. 
-
 ## **Explanation**
-  
+
+This challenge presents an RSA modulus built from more than 2 unique prime factors. The security of the RSA cryptosystem relies on the difficulty of [integer factorization](https://en.wikipedia.org/wiki/Integer_factorization), specifically, the factorization of a modulus build off of 2 sufficiently large primes (generally 1024 bits each, creating a 2048-bit modulus).
+
+The vulnerability occurs due to the fact that the modulus is constructed from multiple smaller primes rather than two large ones. For a fixed-size modulus, using a greater number of primes correlates to each individual prime being proportionally smaller. This matters because various prime decomposition algorithms time complexities are based upon the size of the factors as opposed to the size of the modulus, therefore smaller factors make factorization dramatically faster.
+
+Being aware of this vulnerability allows us to [decompose the prime factors](https://www.dcode.fr/prime-factors-decomposition) that the modulus was built upon, and reconstruct the private key.
+
+To calculate the private exponent using multiple prime numbers we must first calculate Euler's Totient with $k$ prime numbers:
+
+$$\phi(n) = \prod_{i=1}^{k} (p_i - 1)$$
+
+Where in this case we have 34 prime numbers, making $k = 34$
+
+Now having the public exponent $e$ and Euler's Totient we can calculate the private exponent $d$ as follows:
+
+$$d = e^{-1} \mod \phi (n) $$
+
+Finally, the ciphertext $c$ can be decrypted:
+
+$$m = c^d \mod (n)$$
+
 ## **Code / Commands / Images**
 ```Python
 import math
 
-n = 25649813560375001568048346882026937242769546333092774593575777920177026609845669516261875497010680338928598512093478136461697316394565145873952410640017498199063145060224780279290524200160006989434443380944461686917314579269296136549599724295217747942199529682855861076770454094699679458061956629559358221330932170143216530525166522458619328803
-c = 3245558788874331536775086496096566522042934932241023059023636340348281338374635314808132923498992087875119575205336730698745366354352160166269792404085339571536633290723081312018676301242662018635217510143428896777742109147491340008201232833339006412552726131707274220953487993087174746548846378674969015272693705732817287584470603406328622006
+n = [REDACTED]
+c = [REDACTED]
 e = 65537
 
 factor_str = (
@@ -34,6 +48,8 @@ factor_str = (
     "16481380933 × 16482285089 × 16618367971 × 16939810637"
 )
 
+# Factors decomposed using https://www.dcode.fr/prime-factors-decomposition
+
 factors = [int(f.strip()) for f in factor_str.split("×")]
 phi_n = math.prod(p - 1 for p in factors)
 
@@ -41,6 +57,7 @@ d = pow(e, -1, phi_n)
 m = pow(c, d, n)
 
 plaintext = bytes.fromhex(f"{m:x}").decode("utf-8")
+
 print(plaintext)
 
 ```

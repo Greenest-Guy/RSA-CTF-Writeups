@@ -1,9 +1,5 @@
-<div align="center">
-
 # 🔐 miniRSA
 **Difficulty:** Hard
-
-</div>
 
 **Files/Links Provided:** ```ciphertext```
 
@@ -13,29 +9,33 @@
 Let's decrypt this.
 Can you decrypt this ciphertext? Something seems a bit small.
 ```
-
 ## **Steps to Solve:**  
 1. Download ```ciphertext```
-2. Extract N, c, and e for analysis.
-3. Check if the ciphertext corresponds to an exact integer e-th power. If the plaintext $$m$$ satisfies $$m^e < n$$, then $$m^e = c$$. Now you can recover $$m$$ by taking the e-th root of the ciphertext:
+2. Extract $N$, $c$, and $e$ for analysis.
+3. Since there is a small public exponent $e = 3$, and the ciphertext $c$ is relatively small, check if the encryption satisfies $m^e < N$
+4. Seeing that $m^e < N$ is satisfied, we can conclude that $c$ corresponds to an exact integer $e$-th power. Therefore, we can recover $m$ by taking the $e$-th root of the ciphertext:
    
 $$
 m = \sqrt[e]{c}
 $$
 
-4. Use a Python script to calculate $$m = \sqrt[e]{c}$$ and convert the bytes to plaintext.
+4. Use a Python script to calculate $m = \sqrt[e]{c}$ and convert the bytes to plaintext.
 
 ## **Explanation:**
 
-This challenge uses RSA encryption to encrypt a message where n is built off of prime numbers too large to factor. However e (the public exponent) is 3 which is unsafe for RSA encryption, being vulnerable to low public exponent attacks.
+This challenge uses RSA encryption where the modulus $N$ is built from primes too large to factor directly. However, the public exponent $e = 3$ is unusually small for standard RSA, which allows for the possibility of a low public exponent attack when the message $m$ is small enough to satisfy $m^e < N$.
 
-The ciphertext in RSA is calculated using the formula:
+The ciphertext in RSA is calculated as:
 
-$$
-c = m^e \mod (n)
-$$
+$$c = m^e \bmod N$$
 
-When $$m^e$$ is smaller than n modular reduction doesnt occur as $$m^e mod(n)$$ would just be $$m^e$$. Because of this, the ciphertext isnt actually encrypted, and can be decrypted by rearranging $$c = m^e$$ into $$m = \sqrt[e]{c}$$.
+Because of this, when $m^e < N$, modular reduction does not occur, therefore:
+
+$$m^e < N \implies m^e \bmod N = m^e$$
+
+This attack makes it so that decryption becomes basic exponentiation, allow us to recover the plaintext by taking the $e$-th root of the ciphertext $c$:
+
+$$m = \sqrt[e]{c}$$
 
 ## **Code / Commands / Images**
 ```python
