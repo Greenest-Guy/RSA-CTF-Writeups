@@ -8,7 +8,7 @@
 
 ## 📖 About
 
-This repository contains detailed write-ups for various RSA focused cryptography challenges from the CyLab Security Academy.
+This repository contains detailed write-ups for various RSA focused cryptography challenges from the CyLab Security Academy. Each write-up walks through the challenge set-up, steps to solve, and technical explanation on the mathematical vulnerability exploited.
 
 ## Challenges
 
