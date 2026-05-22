@@ -1,9 +1,5 @@
-<div align="center">
-
 # 🔐 StegoRSA
 **Difficulty:** Easy
-  
-</div>
 
 **Files/Links Provided:** ```flag.enc```, ```image.jpg```
 
