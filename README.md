@@ -2,7 +2,7 @@
 
 # 🔐 RSA CTF Writeups
 
-*A collection of RSA cryptography write-ups from PicoCTF/CyLab Security Academy!*
+*A collection of RSA cryptography write-ups from PicoCTF/CyLab Security Academy*
 
 </div>
 
