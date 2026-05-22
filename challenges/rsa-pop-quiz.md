@@ -4,13 +4,12 @@
 
 **Difficulty:** `Hard`
 
-```
-Class, take your seats! It's PRIME-time for a quiz...
-```
 
 </div>
 
-
+```
+Class, take your seats! It's PRIME-time for a quiz...
+```
 
 ## Question 1
 
