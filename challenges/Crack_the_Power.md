@@ -1,5 +1,9 @@
+<div align="center">
+
 # 🔐 Crack the Power
 **Difficulty:** Medium
+
+</div>
 
 **Files/Links Provided:** ```message.txt```
 
