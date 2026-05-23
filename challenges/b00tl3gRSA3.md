@@ -10,7 +10,7 @@ Why use p and q when I can use more?
 
 ## **Explanation**
 
-This challenge presents an RSA modulus built from more than 2 unique prime factors. The security of the RSA cryptosystem relies on the difficulty of [integer factorization](https://en.wikipedia.org/wiki/Integer_factorization), specifically, the factorization of a modulus build off of 2 sufficiently large primes (generally 1024 bits each, creating a 2048-bit modulus).
+This challenge presents an RSA modulus built from more than 2 unique prime factors. The security of the RSA cryptosystem relies on the difficulty of [integer factorization](https://en.wikipedia.org/wiki/Integer_factorization), specifically, the factorization of a modulus built off of 2 sufficiently large primes (generally 1024 bits each, creating a 2048-bit modulus).
 
 The vulnerability occurs due to the fact that the modulus is constructed from multiple smaller primes rather than two large ones. For a fixed-size modulus, using a greater number of primes correlates to each individual prime being proportionally smaller. This matters because various prime decomposition algorithms time complexities are based upon the size of the factors as opposed to the size of the modulus, therefore smaller factors make factorization dramatically faster.
 
