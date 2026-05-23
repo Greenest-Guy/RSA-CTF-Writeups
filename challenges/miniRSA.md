@@ -19,7 +19,7 @@ $$
 m = \sqrt[e]{c}
 $$
 
-4. Use a Python script to calculate $m = \sqrt[e]{c}$ and convert the bytes to plaintext.
+5. Use a Python script to calculate $m = \sqrt[e]{c}$ and convert the bytes to plaintext.
 
 ## **Explanation:**
 
