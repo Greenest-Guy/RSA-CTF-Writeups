@@ -10,7 +10,7 @@
 
 This repository contains detailed write-ups for various RSA focused cryptography challenges from the CyLab Security Academy. Each write-up walks through the challenge set-up, steps to solve, and technical explanation on the mathematical vulnerability exploited.
 
-## 🚩 Challenges
+## 🚩 Challenges (PicoCTF Difficulty)
 
 ### Easy
 - [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md)
