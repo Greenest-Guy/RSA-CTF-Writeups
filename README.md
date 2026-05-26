@@ -12,17 +12,16 @@ This repository contains detailed write-ups for various RSA focused cryptography
 
 
 ## 🚩 Challenges (My Difficulty Ranking)
-
 | Rank | Challenge | Difficulty Score (0-100) | Tier |
 |------|-----------|-------|------|
-| 1 | b00tl3gRSA3 | 70 | Hard |
-| 2 | rsa-pop-quiz | 65 | Hard |
-| 3 | ClusterRSA | 60 | Hard |
-| 4 | miniRSA | 46 | Medium |
-| 5 | Crack the Power | 46 | Medium |
-| 6 | b00tl3gRSA2 | 40 | Medium |
-| 7 | StegoRSA | 30 | Easy |
-| 8 | EVEN RSA CAN BE BROKEN??? | 28 | Easy |
+| 1 | [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md) | 70 | Hard |
+| 2 | [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md) | 65 | Hard |
+| 3 | [```ClusterRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md) | 60 | Hard |
+| 4 | [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md) | 46 | Medium |
+| 5 | [```Crack the Power```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Crack_the_Power.md) | 46 | Medium |
+| 6 | [```b00tl3gRSA2```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA2.md) | 40 | Medium |
+| 7 | [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md) | 30 | Easy |
+| 8 | [```EVEN RSA CAN BE BROKEN???```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/EVEN_RSA_CAN_BE_BROKEN%3F%3F%3F.md) | 28 | Easy |
 
 ## 🚩 Challenges (PicoCTF Difficulty Ranking)
 
