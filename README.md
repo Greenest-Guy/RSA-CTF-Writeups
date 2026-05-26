@@ -10,7 +10,21 @@
 
 This repository contains detailed write-ups for various RSA focused cryptography challenges from the CyLab Security Academy. Each write-up walks through the challenge set-up, steps to solve, and technical explanation on the mathematical vulnerability exploited.
 
-## 🚩 Challenges (PicoCTF Difficulty)
+
+## 🚩 Challenges (My Difficulty Ranking)
+
+| Rank | Challenge | Difficulty Score (0-100) | Tier |
+|------|-----------|-------|------|
+| 1 | b00tl3gRSA3 | 70 | Hard |
+| 2 | rsa-pop-quiz | 65 | Hard |
+| 3 | ClusterRSA | 60 | Hard |
+| 4 | miniRSA | 46 | Medium |
+| 5 | Crack the Power | 46 | Medium |
+| 6 | b00tl3gRSA2 | 40 | Medium |
+| 7 | StegoRSA | 30 | Easy |
+| 8 | EVEN RSA CAN BE BROKEN??? | 28 | Easy |
+
+## 🚩 Challenges (PicoCTF Difficulty Ranking)
 
 ### Easy
 - [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md)
