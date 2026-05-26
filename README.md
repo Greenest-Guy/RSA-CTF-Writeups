@@ -23,6 +23,7 @@ This repository contains detailed write-ups for various RSA focused cryptography
 ### Hard
 - [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md)
 - [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md)
+- [```b00tl3gRSA2```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA2.md)
 - [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md)
 
 ## 🧮 RSA Mathematics Basics
