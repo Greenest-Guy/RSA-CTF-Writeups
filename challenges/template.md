@@ -1,7 +1,7 @@
 <div align="center">
 
 # 🔐 
-**Difficulty:**
+**PicoCTF Difficulty:**
 
 </div>
 

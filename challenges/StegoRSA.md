@@ -1,5 +1,5 @@
 # 🔐 StegoRSA
-**Difficulty:** Easy
+**PicoCTF Difficulty:** Easy
 
 **Files/Links Provided:** ```flag.enc```, ```image.jpg```
 

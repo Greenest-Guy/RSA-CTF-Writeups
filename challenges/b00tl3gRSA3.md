@@ -1,6 +1,6 @@
 # 🔐 b00tl3gRSA3
 
-**Difficulty:** Hard
+**PicoCTF Difficulty:** Hard
 
 ## **Description**  
 

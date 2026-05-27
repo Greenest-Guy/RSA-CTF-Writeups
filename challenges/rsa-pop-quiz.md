@@ -1,6 +1,6 @@
 # 🔐 rsa-pop-quiz
 
-**Difficulty:** `Hard`
+**PicoCTF Difficulty:** `Hard`
 
 ```
 Class, take your seats! It's PRIME-time for a quiz...

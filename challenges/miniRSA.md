@@ -1,5 +1,5 @@
 # 🔐 miniRSA
-**Difficulty:** Hard
+**PicoCTF Difficulty:** Hard
 
 **Files/Links Provided:** ```ciphertext```
 

@@ -1,5 +1,5 @@
 # 🔐 Crack the Power
-**Difficulty:** Medium
+**PicoCTF Difficulty:** Medium
 
 **Files/Links Provided:** ```message.txt```
 
