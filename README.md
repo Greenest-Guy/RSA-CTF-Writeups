@@ -17,12 +17,12 @@ This repository contains detailed write-ups for various RSA focused cryptography
 | 1 | [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md) | 68 | Hard |
 | 2 | [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md) | 65 | Hard |
 | 3 | [```ClusterRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md) | 60 | Hard |
-| 3 | [```college-rowing-team```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/college-rowing-team.md) | 50 | Medium |
-| 4 | [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md) | 46 | Medium |
-| 5 | [```Crack the Power```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Crack_the_Power.md) | 46 | Medium |
-| 6 | [```b00tl3gRSA2```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA2.md) | 40 | Medium |
-| 7 | [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md) | 30 | Easy |
-| 8 | [```EVEN RSA CAN BE BROKEN???```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/EVEN_RSA_CAN_BE_BROKEN%3F%3F%3F.md) | 28 | Easy |
+| 4 | [```college-rowing-team```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/college-rowing-team.md) | 50 | Medium |
+| 5 | [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md) | 46 | Medium |
+| 6 | [```Crack the Power```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Crack_the_Power.md) | 46 | Medium |
+| 7 | [```b00tl3gRSA2```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA2.md) | 40 | Medium |
+| 8 | [```StegoRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/StegoRSA.md) | 30 | Easy |
+| 9 | [```EVEN RSA CAN BE BROKEN???```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/EVEN_RSA_CAN_BE_BROKEN%3F%3F%3F.md) | 28 | Easy |
 
 ## 🧮 RSA Mathematics Basics
 The security of the RSA cryptosystem lies in the difficulty of factoring a large modulus into its original prime factors. RSA keys are generated using large prime factors, and utilizing modular arithmetic to encrypt and decrypt messages.
