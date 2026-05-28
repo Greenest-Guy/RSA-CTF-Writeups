@@ -14,7 +14,7 @@ This repository contains detailed write-ups for various RSA focused cryptography
 ## 🚩 Challenges (My Difficulty Ranking)
 | Rank | Challenge | Difficulty Score (0-100) | Tier |
 |------|-----------|-------|------|
-| 1 | [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md) | 70 | Hard |
+| 1 | [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md) | 68 | Hard |
 | 2 | [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md) | 65 | Hard |
 | 3 | [```ClusterRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md) | 60 | Hard |
 | 4 | [```miniRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/miniRSA.md) | 46 | Medium |
