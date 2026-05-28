@@ -1,9 +1,5 @@
-<div align="center">
-
 # 🔐 
 **PicoCTF Difficulty:**
-
-</div>
 
 **Files/Links Provided:** ``````
 
