@@ -34,8 +34,6 @@ import gmpy2
 
 file_path = r"encrypted-messages.txt"
 
-c = None
-
 with open(file_path, mode='r') as file:
     for line in file.readlines():
         if "c:" in line:
