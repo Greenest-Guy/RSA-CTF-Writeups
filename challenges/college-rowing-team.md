@@ -39,13 +39,10 @@ c = None
 
 with open(file_path, mode='r') as file:
     for line in file.readlines():
-        if "n:" in line:
-            n = int(line[2:])
-
         elif "c:" in line:
             c = int(line[2:])
 
-        if n and c:
+        if c:
             m, exact = gmpy2.iroot(c, 3)
 
             plaintext_bytes = m.to_bytes(
@@ -55,7 +52,6 @@ with open(file_path, mode='r') as file:
 
             print(plaintext)
 
-            n = None
             c = None
 
 ```
