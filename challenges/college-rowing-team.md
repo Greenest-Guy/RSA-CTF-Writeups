@@ -59,6 +59,6 @@ with open(file_path, mode='r') as file:
             c = None
 
 ```
-> 
+> Python code to read encrypted-messages.txt and decrypt each message using an eth root attack 
 
 [🏠 Back to Main Page](https://github.com/Greenest-Guy/RSA-CTF-Writeups)
