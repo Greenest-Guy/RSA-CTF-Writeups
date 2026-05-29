@@ -34,15 +34,13 @@ import gmpy2
 
 file_path = r"encrypted-messages.txt"
 
-n = None
 c = None
 
 with open(file_path, mode='r') as file:
     for line in file.readlines():
-        elif "c:" in line:
+        if "c:" in line:
             c = int(line[2:])
 
-        if c:
             m, exact = gmpy2.iroot(c, 3)
 
             plaintext_bytes = m.to_bytes(
@@ -51,9 +49,6 @@ with open(file_path, mode='r') as file:
             plaintext = plaintext_bytes.decode('utf-8')
 
             print(plaintext)
-
-            c = None
-
 ```
 > Python code to read encrypted-messages.txt and decrypt each message using an eth root attack 
 
