@@ -1,17 +1,17 @@
 ```Python
 from pwn import *
 
+c = [REDACTED]
 ip = [REDACTED]
 port = [REDACTED]
 
-c = [REDACTED]
 connection = remote(ip, port)
 
 connection.send(b'E\n')
 
 connection.send(b'\x02\n')
 
-data = connection.recvlines(timeout=1)
+data = connection.recvlines(timeout=5)
 for line in data:
     if "ciphertext" in str(line):
         c_a = int(str(line)[27:-1])
@@ -27,8 +27,8 @@ m = int(m, 16)//2
 
 byte_length = (m.bit_length() + 7) // 8
 
-
-byte_data = m.to_bytes(byte_length, byteorder='big')
+byte_data = m.to_bytes(byte_length, byteorder='big').decode("utf-8")
 
 print(byte_data)
+
 ````
