@@ -7,17 +7,21 @@ port = [REDACTED]
 
 connection = remote(host, port)
 
-connection.send(b'E\n')                        # E --> encrypt D --> decrypt.
+# E --> encrypt D --> decrypt.
+connection.send(b'E\n')
 
-connection.send(b'\x02\n')                     # enter text to encrypt (encoded length must be less than keysize):
+# enter text to encrypt (encoded length must be less than keysize):
+connection.send(b'\x02\n')
 
 data = connection.recvuntil(b"(m ^ e mod n) ")
 c_a = int(connection.recvline().strip().decode())
 
-connection.send(b'D\n')                        # E --> encrypt D --> decrypt. 
+# E --> encrypt D --> decrypt. 
+connection.send(b'D\n')
 
+# Enter text to decrypt:
 payload = c * c_a
-connection.send(str(payload).encode() + b"\n") # Enter text to decrypt:
+connection.send(str(payload).encode() + b"\n")
 
 connection.recvuntil(b"(c ^ d mod n): ")
 m = connection.recvline().strip().decode()
