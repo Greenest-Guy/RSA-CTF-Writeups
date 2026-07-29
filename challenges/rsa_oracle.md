@@ -1,3 +1,27 @@
+# 🔐 rsa_oracle
+**PicoCTF Difficulty:** Medium
+
+**Files/Links Provided:** ```password.enc```, ```secret.enc```
+
+## **Description**  
+```
+Can you abuse the oracle?
+
+An attacker was able to intercept communications between a bank and a fintech company.
+They managed to get the message (ciphertext) and the password that was used to encrypt the message.
+```
+
+## **Explanation**
+$$c \equiv m^e \pmod n$$
+$$c_a \equiv 2^e \pmod n$$
+$$c_b = c \cdot c_a \equiv m ^ e \cdot 2 ^ e \pmod n$$
+$$(c_b) ^ d \equiv (m ^ e \cdot 2 ^ e) ^ d \equiv (m ^ e) ^ d \cdot (2 ^ e) ^ d \pmod n$$
+$$(m ^ e) ^ d \equiv m \pmod n$$
+$$(c_b) ^ d \equiv m \cdot 2 \pmod n$$
+$$m \equiv 2 ^ {-1} \cdot (c_b) ^ d \pmod n$$
+$$m = \frac{(c_b)^d \bmod n}{2} \because 0 < 2m < n$$
+
+## **Code / Commands / Images**
 ```Python
 from pwn import *
 
