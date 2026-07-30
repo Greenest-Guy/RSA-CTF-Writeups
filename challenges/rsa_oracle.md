@@ -85,7 +85,7 @@ connection = remote(host, port)
 connection.send(b'E\n')
 
 # enter text to encrypt (encoded length must be less than keysize):
-connection.send(b'\x02\n')
+connection.send(b'\x02\n') # IMPORTANT send the hex \x02 not the ascii character 2 which is hex 51
 
 data = connection.recvuntil(b"(m ^ e mod n) ")
 c_a = int(connection.recvline().strip().decode())
