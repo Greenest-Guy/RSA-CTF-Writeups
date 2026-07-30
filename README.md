@@ -14,8 +14,8 @@ This repository contains detailed write-ups for various RSA focused cryptography
 ## 🚩 Challenges (My Difficulty Ranking)
 | Rank | Challenge | Difficulty Score (0-100) | Tier |
 |------|-----------|-------|------|
-| 1 | [```Sum-O-Primes```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Sum-O-Primes.md) | 72 | Hard |
-| 2 | [```rsa_oracle```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa_oracle.md) | 70 | Medium |
+| 1 | [```rsa_oracle```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa_oracle.md) | 77 | Hard |
+| 2 | [```Sum-O-Primes```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/Sum-O-Primes.md) | 72 | Hard |
 | 3 | [```b00tl3gRSA3```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/b00tl3gRSA3.md) | 68 | Hard |
 | 4 | [```rsa-pop-quiz```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/rsa-pop-quiz.md) | 65 | Hard |
 | 5 | [```ClusterRSA```](https://github.com/Greenest-Guy/RSA-CTF-Writeups/blob/main/challenges/ClusterRSA.md) | 60 | Hard |
