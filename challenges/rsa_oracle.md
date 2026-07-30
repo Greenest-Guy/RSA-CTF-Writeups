@@ -3,7 +3,7 @@
 
 **Files/Links Provided:** ```password.enc```, ```secret.enc```
 
-## **Description**  
+## **Description**
 ```
 Can you abuse the oracle?
 
@@ -97,12 +97,13 @@ connection.send(b'D\n')
 payload = c * c_a
 connection.send(str(payload).encode() + b"\n")
 
+# receive decrypted hex
 connection.recvuntil(b"(c ^ d mod n): ")
 m = connection.recvline().strip().decode()
 
 m = int(m, 16)//2 # convert the hexadecimal output into decimal then divide by 2
 
-byte_length = (m.bit_length() + 7) # convert integer to bytes
+byte_length = (m.bit_length() + 7) // 8 # convert integer to bytes
 
 password = m.to_bytes(byte_length, byteorder='big').decode("utf-8") # convert bytes to text (utf-8)
 
