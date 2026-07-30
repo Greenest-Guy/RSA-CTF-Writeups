@@ -40,7 +40,7 @@ Since $c_b$ does not equal $c$, the oracle allows us to decrypt $c_b$ so that:
 
 $$(c_b) ^ d \equiv (m ^ e \cdot 2 ^ e) ^ d \equiv (m ^ e) ^ d \cdot (2 ^ e) ^ d \pmod n$$
 
-Since $e$ and $d$ are modular multiplicative inverses of each other, we know that:
+Since $e$ and $d$ are modular multiplicative inverses of each other modulo $\phi (n)$, we know that:
 
 $$(m ^ e) ^ d \equiv m \pmod n$$
 $$(2 ^ e) ^ d \equiv 2 \pmod n$$
@@ -49,7 +49,7 @@ Therefore:
 
 $$(c_b) ^ d \equiv m \cdot 2 \pmod n$$
 
-This allows us to recover $m$ by simply dividing the ciphertext by our chosen plaintext $2$:
+This allows us to recover $m$ by simply dividing the returned plaintext $2m$ by our chosen plaintext $2$:
 
 $$m \equiv 2 ^ {-1} \cdot (c_b) ^ d \pmod n$$
 
@@ -64,7 +64,7 @@ $$m = \frac{(c_b)^d \bmod n}{2} \because 0 < 2m < n$$
 4. Tell the oracle we would like to decrypt a message
 5. Calculate $c_b$ by mulitplying $c$ provided in ```password.enc``` and $c_a$ returned by the oracle
 6. Decrypt $c_b$
-7. Convert the decrypted $c_b$ from hexadecimal to decimal and divide by 2 to get $m$
+7. Convert the recovered plaintext $(c_b)^d$ from hexadecimal to decimal and divide by 2 to get $m$
 8. Convert $m$ into bytes and then into text
 9. Using openssl and the password, decrypt ```secret.enc``` to obtain the flag
 
@@ -85,7 +85,7 @@ connection = remote(host, port)
 connection.send(b'E\n')
 
 # enter text to encrypt (encoded length must be less than keysize):
-connection.send(b'\x02\n') # IMPORTANT send the hex \x02 not the ascii character 2 which is hex 51
+connection.send(b'\x02\n') # IMPORTANT send the raw byte \x02 not the ASCII character 2 as its hex is 0x32
 
 data = connection.recvuntil(b"(m ^ e mod n) ")
 c_a = int(connection.recvline().strip().decode())
